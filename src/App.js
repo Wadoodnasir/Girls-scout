@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import Footer from './componet/Footer';
 import './App.css';
-
-function App() {
+import BreakingNews from './componet/BreakingNews';
+import Container from './componet/Container';
+import Cards from './componet/Cards';
+import HeadingOfContent from './componet/HeadingOfContent';
+import FeatureCards from './componet/FeatureCards';
+import ExpolerContainer from './componet/ExpolerContainer';
+import ActivitieCards from './componet/ActivitieCards';
+import GirlsScoutCaurosal from './componet/GirlsScoutCaurosal';
+import CarouselWithCards from './componet/CarouselWithCards';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BreakingNews />
+      <Container />
+      <Cards />
+      <HeadingOfContent />
+      <FeatureCards />
+      <ExpolerContainer />
+      <ActivitieCards />
+      <GirlsScoutCaurosal />
+      <CarouselWithCards />
+      <Footer />
+    </>
   );
-}
-
+};
 export default App;

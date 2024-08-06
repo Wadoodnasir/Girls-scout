@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: transparent;
+  width: 100%;
 }
+/* hover */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav:hover {
+  background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav:hover li {
+  color: black;
+}
+nav:hover .icon {
+  color: black;
+}
+.main-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin: 0px 140px;
+  padding: 25px 0px 5px 0px;
+}
+.logo {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+.nav-logo {
+  width: 160px;
+}
+.nav-logo:hover {
+  width: 160px;
+}
+.nav-logowhite {
+  width: 160px;
+}
+.nav-item {
+  width: 30px;
+}
+
+.nav-item-black {
+  width: 30px;
+}
+
+.header-eyebrow {
+  display: flex;
+  column-gap: 40px;
+  justify-content: flex-end;
+}
+.btn-style {
+  width: 105px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.dropdown-items {
+  display: flex;
+  padding-top: 30px;
+  justify-content: end;
+}
+.dropdown-items li {
+  list-style: none;
+  font-size: 18px;
+  padding-left: 22px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.breaking-news {
+  padding: 12px 0px;
+  background-color: #d5f267;
+}
+.news {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+  font-weight: 500;
+}
+.main-container {
+  background-image: url('https://www.girlscouts.org/content/dam/girlscouts-shared-redesign/images/image-library/homepage-banner-library/outdoors/Template_WebHomepage_DESKTOP_1920x1100_Outdoors.jpg');
+  background-repeat: no-repeat;
+  min-height: 775px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.icon {
+  color: white;
+}
+.content {
+  background-image: url('https://www.girlscouts.org/content/dam/gsusa-redesign/headers/barrels/GSUSA_banner-barrelshape-stargreen.png');
+  background-repeat: no-repeat;
+  width: 505px;
+  height: 330px;
+  background-size: contain;
+  margin: 5vh 9vw;
+}
+.content p {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 100px;
+}
+.main-ft {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.btn-ft {
+  background-color: #fcb89d;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+  column-gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-ft button {
+  width: 340px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 12px 0px;
+  color: white;
+  cursor: pointer;
+}
+.sub-btn {
+  width: 390px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 12px 0px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+#btn-sub {
+  background-color: transparent;
+  color: black;
+  border: 1px solid green;
+  margin-bottom: 40px;
+  height: 60px;
+  padding: 0;
+}
+#btn-ft1 {
+  background-color: #5c1f8b;
+}
+#btn-ft2 {
+  background-color: #005640;
+}
+#btn-ft3 {
+  background-color: #004987;
+}
+.arrow-icon {
+  opacity: 1;
+}
+.input-ft {
+  background-image: url('https://www.girlscouts.org/content/dam/gsusa-redesign/footer-bg-1280@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 80px;
+}
+.heading-ft {
+  width: 404px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#input-ft {
+  width: 400px;
+}
+.thankyou {
+  margin-bottom: 47px;
+}
+.social-icon {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* .social-icon img{
+     margin-left:15px; 
+     padding: 20px; 
+
+} */
+
+.contact-list {
+  list-style: none;
+  text-align: center;
+}
+.list-style {
+  color: #006b50;
+  font-size: 18px;
+  /* padding-bottom: 10px; */
+  font-weight: 600;
+  text-decoration: wavy;
+  border-bottom: 1px solid #005640;
+}
+
+.list-style:hover {
+  color: #005640;
+  border-bottom: 3px solid #005640;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -98px;
+}
+.cards-container {
+  padding: 20px 10px;
+}
+.card {
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+}
+.card-heading {
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0%;
+  font-weight: bolder;
+  font-size: 33px;
+}
+.card-detail {
+  font-size: 20px;
+  padding: 10px 0px;
+  width: 358px;
+  text-align: center;
+  margin: 0%;
+}
+.card-button {
+  width: 358px;
+  padding: 6px 4px;
+  margin: 10px 0px 0px;
+  font-size: 30px;
+  border-color: transparent;
+  color: white;
+  border-radius: 15px;
+}
+
+.content-container {
+  margin: 0px 244px 20px;
+}
+.feature-card {
+  background-color: #f7be00;
+  margin: auto;
+  padding-top: 20px;
+}
+.general-btn {
+  border-radius: 10px;
+}
+#sub-btn {
+  border: 1px solid #50b05c;
+}
+.icon-social {
+  background-color: #a0def1;
+  padding: 5px;
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.icon-social:hover {
+  background-color: white;
 }
