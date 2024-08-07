@@ -48,7 +48,7 @@ const CarouselWithCards = () => {
     },
     {
       id: 7,
-      src: 'https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/453091891_1029527262537450_4086598017114148008_n.jpg?stp=dst-jpg_p720x720&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=57bU2vQKFKkQ7kNvgHpbnyx&_nc_ht=scontent-iad3-2.xx&edm=ALdPpPkEAAAA&oh=00_AYBETkWe0ZL92ZjaDVicqJiXDGelyLD99nwRMjfGDpkvwA&oe=66AFD8D7',
+      src: 'https://www.juicer.io/api/posts/483874400/images.jpg?external_id=1817785897938501883&s=c398c30f5a600191dca8fe0cdf0c3085e1976732',
       title: 'Official Junior Vest',
       type: 'Uniform',
       detail: 'Classic fit with new sustainably sourced fabric.',
@@ -69,7 +69,7 @@ const CarouselWithCards = () => {
     },
     {
       id: 10,
-      src: 'https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/453005773_1028195502670626_33425022256673900_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6R8yfqYkYRIQ7kNvgEHwtgo&_nc_ht=scontent-iad3-2.xx&edm=ALdPpPkEAAAA&oh=00_AYA7KVJElrqFwiXP7kgyRb8XuSdOVKD8q9xx724dZ4qNCQ&oe=66AFE678',
+      src: 'https://www.girlscouts.org/content/dam/gsusa/promotions/shop/homepage/Official-Junior-Vest-5220_main-01.default.jpg',
       title: 'Official Junior Vest',
       type: 'Uniform',
       detail: 'Classic fit with new sustainably sourced fabric.',
@@ -79,15 +79,13 @@ const CarouselWithCards = () => {
   const breakPoints = [{ width: 1, itemsToShow: 1.9, itemsToScroll: 1 }];
 
   return (
-    <div
-      className=' container-fluid p-0'
-      style={{ backgroundColor: '#005640' }}
-    >
-      <div className='container p-0 '>
+    <div className='container-fluid p-0' style={{ backgroundColor: '#005640' }}>
+      <div className='container p-0'>
         <Carousel breakPoints={breakPoints} showArrows={true} showDots={false}>
           {items.map((item) => (
             <div
-              className='row  bg-white mt-5 mb-2  mx-2  rounded-4 align-items-center'
+              key={item.id} // Ensure each child has a unique "key" prop
+              className='row bg-white mt-5 mb-2 mx-2 rounded-4 align-items-center'
               style={{ padding: 20 }}
             >
               <div className='col-5 p-0'>
@@ -103,11 +101,11 @@ const CarouselWithCards = () => {
                   }}
                 />
               </div>
-              <div className='col-7 p-0 text-center '>
+              <div className='col-7 p-0 text-center'>
                 <div>
                   <h3>{item.title}</h3>
                   <p>{item.type}</p>
-                  <p style={{ fontSize: 20 }} className=' px-3'>
+                  <p style={{ fontSize: 20 }} className='px-3'>
                     {item.detail}
                   </p>
                   <GeneralBtn
@@ -127,4 +125,5 @@ const CarouselWithCards = () => {
     </div>
   );
 };
+
 export default CarouselWithCards;
